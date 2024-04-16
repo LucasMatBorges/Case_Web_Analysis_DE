@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Metrics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            height: 100vh; /* Full height */
+            display: flex;
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
+        }
+        .container {
+            width: 80%;
+            max-width: 600px; /* Maximum width */
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            text-align: center; /* Center text inside the container */
+        }
+        h1 {
+            color: #0056b3;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin: 10px 0; /* Top and bottom margin */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Xccelerated</div>
+        <h1>Order Metrics</h1>
+        <p>Median Visits Before Order: {{ median_visits_before_order }}</p>
+        <p>Median Session Duration Before Order (minutes): {{ median_session_duration_minutes_before_order }}</p>
+    </div>
+</body>
+</html>
