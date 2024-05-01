@@ -7,7 +7,7 @@ app = Flask(__name__, template_folder='template')
 # Database connection parameters
 DATABASE_NAME = 'webshop'
 USER_NAME = 'postgres'
-PASSWORD = '20.Dubai.20'
+PASSWORD = input("DataBase Password")
 HOST_ADDRESS = 'localhost'
 
 @app.route('/metrics/orders', methods=['GET'])
